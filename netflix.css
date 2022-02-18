@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: black;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+.searchicon {
+    width: 15px;
+    position: relative;
+    top: 10px;
+    right: -14px;
+}
+header .logo img {
+    max-width: 150px;
+}
+.navegacion {
+    display: flex;
+}
+.navegacion li {
+    list-style: none;
+    margin: 0 10px;
+}
+.navegacion li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navegacion li:hover a {
+    color: red;
+}
+.buscar {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.buscar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 35px;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 2555, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+.buscar input::placeholder{
+    color: white;
+}
+.banner {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .bk{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.contenido {
+    position: relative;
+    z-index: 1;;
+    max-width: 550px;
+}
+.titulopeli {
+    max-width: 300px;
+
+}
+.banner .contenido h4 {
+    color: rgba(255, 255, 2555, 0.5);
+    font-weight: 500;
+}
+.banner .contenido h4 span {
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 2555, 0.5);
+}
+.banner .contenido h4 span:first-child {
+    padding-left: 0;
+}
+.banner .contenido h4 span:last-child {
+    border-right: none;
+}
+.banner .contenido p {
+    font-style: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: white;
+    margin: 10px 0 20px;
+}
+.banner .contenido .botones {
+    position: relative;
+}
+.banner .contenido .botones a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 2555, 0.1);
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.playb {
+    width: 25px;
+    padding: 0 5px;
+}
+.play {
+    position: absolute;
+    bottom: 180px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.play img {
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+/* Galeria */
+
+.fila-poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    margin-right: 10px;
+    transition: transform 450ms;
+    
+}
+.fila-posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.fila-poster:hover {
+    transform: scale(1.3);
+}
+
+.fila {
+  color: white;
+  margin-left: 20px;
+}
+
